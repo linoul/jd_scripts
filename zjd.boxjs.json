@@ -1,7 +1,7 @@
 {
   "apps": [
       {
-      "id": "jd_plantBean",
+      "id": "jd_ZBean",
       "name": "抢京豆",
       "keys": [
         "jd_plant_bean_name",
