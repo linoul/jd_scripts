@@ -1,11 +1,11 @@
 {
-   "id": "lxk0301.app.sub",
+  "id": "lxk0301.app.sub",
   "name": "lxk0301脚本订阅",
   "author": "@lxk0301",
   "icon": "https://avatars0.githubusercontent.com/u/21308593?s=52&v=4",
   "repo": "https://github.com/lxk0301/jd_scripts/",
   "apps": [
-      {
+    {
       "id": "jd_ZBean",
       "name": "抢京豆",
       "keys": [
@@ -46,7 +46,7 @@
         },
          {
           "id": "groupCode2",
-          "name": "京东账号一互助码3",
+          "name": "京东账号一互助码4",
           "val": "",
           "type": "text",
           "desc": "种豆得豆互助码.这是别人的助力码,你帮别人助力."
@@ -61,5 +61,4 @@
       ]
     }
   ]
-
 }
