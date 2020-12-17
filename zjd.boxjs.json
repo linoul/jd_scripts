@@ -1,0 +1,60 @@
+{
+  "apps": [
+      {
+      "id": "jd_plantBean",
+      "name": "抢京豆",
+      "keys": [
+        "jd_plant_bean_name",
+        "ShareCode1",
+        "groupCode1",
+        "ShareCode2",
+        "groupCode2",
+      ],
+      "settings": [
+        {
+          "id": "jd_plant_bean_name",
+          "name": "京东账号一昵称",
+          "val": "",
+          "type": "text",
+          "desc": "京东账号昵称,用于区分自己的京东账号(非必填，建议多个京东账号使用)"
+        },
+        {
+          "id": "ShareCode1",
+          "name": "京东账号一互助码1",
+          "val": "",
+          "type": "text",
+          "desc": "种豆得豆互助码.这是别人的助力码,你帮别人助力."
+        },
+        {
+          "id": "groupCode1",
+          "name": "京东账号一互助码2",
+          "val": "",
+          "type": "text",
+          "desc": "种豆得豆互助码.这是别人的助力码,你帮别人助力."
+        },
+        {
+          "id": "ShareCode2",
+          "name": "京东账号一互助码3",
+          "val": "",
+          "type": "text",
+          "desc": "种豆得豆互助码.这是别人的助力码,你帮别人助力."
+        },
+         {
+          "id": "groupCode2",
+          "name": "京东账号一互助码3",
+          "val": "",
+          "type": "text",
+          "desc": "种豆得豆互助码.这是别人的助力码,你帮别人助力."
+        }
+      ],
+      "author": "@lxk0301",
+      "repo": "https://github.com/lxk0301/jd_scripts",
+      "script": "https://raw.githubusercontent.com/lxk0301/jd_scripts/master/jd_plantBean.js",
+      "icons": [
+        "https://raw.githubusercontent.com/58xinian/icon/master/jdzd_mini.png",
+        "https://raw.githubusercontent.com/58xinian/icon/master/jdzd.png"
+      ]
+    }
+  ]
+
+}
