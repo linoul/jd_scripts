@@ -68,7 +68,7 @@ $.drip = 0;
       getMessage(endInfo, startInfo);
       await submitInviteId(userName);
       await $.wait(500);
-      //await createAssistUser();
+      await createAssistUser();
     }
   }
   await showMsg();
@@ -279,7 +279,8 @@ function createAssistUser() {
           return;
         }
         $.get(
-          taskUrl('help', `active=${$.info.active}&joinnum=${$.info.joinnum}&smp=${data.value}`),
+          //taskUrl('help', `active=${$.info.active}&joinnum=${$.info.joinnum}&smp=${data.value}`),
+          taskUrl('help', `active=jdnc_1_chelizi1205_2&joinnum=${$.info.joinnum}&smp=58f7e2bbba3dd72393199ab51a1a5db1`),
           async (err, resp, data) => {
             try {
               const res = data.match(/try\{whyour\(([\s\S]*)\)\;\}catch\(e\)\{\}/)[1];
