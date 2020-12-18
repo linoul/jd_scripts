@@ -56,7 +56,7 @@ $.drip = 0;
       );
       $.log(`\n开始【京东账号${i + 1}】${userName}`);
       $.result.push(`【京东账号${i + 1}】${userName}`);
-     // const startInfo = await getTaskList();
+      const startInfo = await getTaskList();
      // if (!startInfo) break;
       await $.wait(500);
       //const isOk = await browserTask();
