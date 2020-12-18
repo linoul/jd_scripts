@@ -76,13 +76,13 @@ $.userTuanInfo = {};
       await $.wait(500);
       await submitInviteId(userName);
       await $.wait(500);
-      await createAssistUser();
+      //await createAssistUser();
       await $.wait(500);
       await getTuanId();
       await $.wait(500);
       await submitTuanId(userName);
       await $.wait(500);
-      await joinTuan();
+     // await joinTuan();
     }
   }
   await showMsg();
