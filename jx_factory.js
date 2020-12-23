@@ -82,7 +82,7 @@ $.userTuanInfo = {};
       await $.wait(500);
       await submitTuanId(userName);
       await $.wait(500);
-     // await joinTuan();
+      //await joinTuan();
     }
   }
   await showMsg();
@@ -500,7 +500,7 @@ function createAssistUser() {
 
 function getTuanId() {
   return new Promise(async resolve => {
-    $.get(taskUrl('tuan/QueryActiveConfig', `activeId=gaVXW_NJ0KPEA2LyUhoXzA%3D%3D`), async (err, resp, data) => {
+    $.get(taskUrl('tuan/QueryActiveConfig', `activeId=6S9y4sJUfA2vPQP6TLdVIQ%3D%3D`), async (err, resp, data) => {
       try {
         const { msg, data: { userTuanInfo } = {} } = JSON.parse(data);
         $.log(`\n获取团id：${msg}\n${$.showLog ? data : ''}`);
@@ -526,7 +526,7 @@ function getTuanId() {
 
 function getTuanInfo(body) {
   return new Promise(async resolve => {
-    $.get(taskUrl('tuan/QueryTuan', `activeId=gaVXW_NJ0KPEA2LyUhoXzA%3D%3D&${body}`), async (err, resp, data) => {
+    $.get(taskUrl('tuan/QueryTuan', `activeId=6S9y4sJUfA2vPQP6TLdVIQ%3D%3D&${body}`), async (err, resp, data) => {
       try {
         const { msg, data: { tuanInfo = [] } = {} } = JSON.parse(data);
         $.log(`\n获取开团信息：${msg}\n${$.showLog ? data : ''}`);
@@ -573,7 +573,7 @@ function submitTuanId(userName) {
 function createTuan() {
   return new Promise(async resolve => {
     $.get(
-      taskTuanUrl('tuan/CreateTuan', `activeId=gaVXW_NJ0KPEA2LyUhoXzA%3D%3D&isOpenApp=1`),
+      taskTuanUrl('tuan/CreateTuan', `activeId=6S9y4sJUfA2vPQP6TLdVIQ%3D%3D&isOpenApp=1`),
       async (err, resp, _data) => {
         try {
           const { msg, data = {} } = JSON.parse(_data);
@@ -598,7 +598,7 @@ function joinTuan() {
         const { data = {} } = JSON.parse(_data);
         $.log(`\n${data.value}\n${$.showLog ? _data : ''}`);
         $.get(
-          taskTuanUrl('tuan/JoinTuan', `activeId=gaVXW_NJ0KPEA2LyUhoXzA%3D%3D&tuanId=${data.value}`),
+          taskTuanUrl('tuan/JoinTuan', `activeId=6S9y4sJUfA2vPQP6TLdVIQ%3D%3D&tuanId=${data.value}`),
           async (err, resp, data) => {
             try {
               const { msg } = JSON.parse(data);
